@@ -21,7 +21,7 @@ function App() {
     DataFromAPI(submit);
   }, [submit]);
   const DataFromAPI = async (submit) => {
-    const API_KEY = "d53fce9640dd4223b69182056211002";
+    const API_KEY = "your key from  https://www.weatherapi.com/";
     const url = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${submit}:lang=`;
     try {
       const response = await fetch(url);
